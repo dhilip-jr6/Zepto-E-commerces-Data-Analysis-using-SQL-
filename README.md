@@ -77,7 +77,6 @@ Run the provided SQL file:
 
 \i Zepto_SQL_data_analysis.sql
 
-
 Execute queries section by section to explore and analyze the data
 
 🧠 Insights You Can Derive
