@@ -53,6 +53,7 @@ Group products by weight category
 
 Total inventory weight per category
 
+
 📈 Example Queries
 -- Top 10 best-value products
 SELECT DISTINCT name, mrp, discountPercent
@@ -60,12 +61,14 @@ FROM zepto
 ORDER BY discountPercent DESC
 LIMIT 10;
 
+
 -- Estimated Revenue by Category
 SELECT category,
 SUM(discountedSellingPrice * availableQuantity) AS total_revenue
 FROM zepto
 GROUP BY category
 ORDER BY total_revenue DESC;
+
 
 🚀 How to Run
 
@@ -76,6 +79,7 @@ Create a new database (e.g., zepto_db)
 Run the provided SQL file:
 
 \i Zepto_SQL_data_analysis.sql
+
 
 Execute queries section by section to explore and analyze the data
 
@@ -88,6 +92,7 @@ Discount trends across different product segments
 Stock and supply management indicators
 
 Best-performing product categories
+
 
 📁 File Included
 
